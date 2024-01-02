@@ -1,0 +1,246 @@
+
+
+/* :::::::::::::::::::::::::   :::::::::::::::::::::::::  */
+
+
+/* Mobile (iPhone SE) */
+@media (max-width: 320px) {
+	body {
+	   font-size:  6vw;
+	   /* border: 5px solid purple;     :: Testing :: */   
+	}
+
+	.textbox{
+		 padding-top: 1em;
+	}
+
+#iconstyle {
+	font-size: 4vw;
+	word-spacing: 6vw; 
+	text-shadow: 0.0px 0.0px #CAFAFE;
+	}
+	
+	.button-style {
+		opacity: 0.90;
+		font-size: 5.5vw; /* fontsize for link-button */
+		margin: 4vh;
+	}
+    
+    .textbox{
+        /* font-size: 5.25vw; Main Text over Image Font Size */
+        font-size: 6vw; /* Main Text over Image Font Size */
+    }
+	
+	.copyright {
+	/*font-weight: bold;*/
+    font-size: 3.6vw; 
+	}
+
+/*::::::::::::::::::: EIA :::::::::::::::::::*/
+    .eia-mainbox {         /* .eia-mainbox to center content  */
+        padding-top: 2vh;
+    }
+        
+    .eia-intro-text{
+        font-size: 0.9em;
+        line-height: 1.15em;
+        letter-spacing: 0.025em;
+        padding-bottom: 1em;
+    }
+
+    .eia-choices-block{
+        color: white;
+        padding: 1vh;
+        padding-left: 1.5vw;
+        font-size: 1.1em;
+        line-height: 2em;
+        letter-spacing: 0.15em;
+        font-weight: 600;
+        color: blue;
+    } 
+    .rumination{	
+	    font-size: 0.9em;
+	    line-height: 1.15em;
+	    letter-spacing: 0.025em;
+		/* border: 1px solid pink;  */
+    }
+	
+	#eia-sketch-holder{ /*   :::  holds the js canvas . */
+	  top: 0em;
+		/* border: 3px solid green;  */
+	}
+    
+    .eia-colorcodes{
+	    top:  -3vh;
+	    left: 1vw;
+	    padding-left: 3vh;
+	    text-shadow: 0.5px 0.5px 1px white;
+	    font-size: 1.3em;
+	}
+
+    .eia-footer-text{
+	    text-shadow: 0.5px 0.5px 0.5px #656565;
+	    font-size: 0.85em;
+	    line-height: 1.45em;
+	    letter-spacing: 0.05em;
+	}
+    
+	.chosen-feeling-style{
+	   font-family: 'computer_7regular', Veranda, monospace;
+	   color: white;
+	   font-size: 2em; 
+	   padding-left: 2vw;    
+	}
+}
+
+/* Small Tablets & iPhone 7*/
+@media (min-width: 321px) and (max-width: 767px) {
+	body {
+		/*font-weight: bold;*/
+		font-size:  6vw;  /*  :: only changes text on pages 07 - 10.  See 'textbox' below for others :: */ 
+		/*  border: 5px solid orange;   :: Testing :: */ 
+	}	
+	
+	#iconstyle {
+		font-size: 6vw;
+		word-spacing: 8vw; 
+		text-shadow: 0.0px 0.0px #97CAEF;
+	}
+	
+	.button-style {
+		opacity: 0.90;
+		font-size: 5.5vw; /* fontsize for link-button */
+		margin: 4vh;
+	}
+
+    .textbox{
+    	padding: 5%;
+    	letter-spacing: 2.5px;
+	    font-size: 6.8vw; /* Main Text over Image Font Size */
+}
+	
+	.copyright {
+	/*font-weight: bold;*/
+		font-size: 3.5vw; 
+	}
+
+/*::::::::::::::::::: EIA :::::::::::::::::::*/
+    .eia-mainbox {  /* .eia-mainbox to center content  */
+        padding-top: 2vh;
+    }
+        
+    .eia-intro-text{
+        font-size: 1.0em;
+        line-height: 1.15em;
+        letter-spacing: 0.03em;
+        padding-bottom: 1em;
+    }
+    
+    .eia-choices-block{
+        color: white;
+        padding: 1vh;
+        padding-left: 1.5vw;
+        font-family: 'computer_7regular', Veranda, monospace;
+        color: white;
+        font-size: 1.5em;
+        line-height: 2em;
+        letter-spacing: 0.2em;
+	}   
+
+    .rumination{	
+	    font-size: 1.0em;
+	    line-height: 1.15em;
+	    letter-spacing: 0.03em;
+		/*	border: 3px solid red; */
+    }
+
+    #eia-sketch-holder{ /*   :::  holds the js canvas . */
+    	top: 0vh;
+	}
+    
+    .eia-colorcodes{
+	    top:  -3vh;
+	    left: 0vw;
+	    padding-left: 3vh;
+	    text-shadow: 1px 1px 0.5px white;
+	    font-size: 1.1em;
+	}
+
+    .eia-footer-text{
+	    text-shadow: 0.5px 0.5px 0.5px #656565;
+	    font-size: 1.0em;
+	    line-height: 1.15em;
+	    letter-spacing: 0.03em;
+	}
+
+
+	#dot1{
+	    height: 3vw;
+	    width: 3vw;
+	}
+
+	#dot2{
+	    height: 3vw;
+	    width: 3vw;
+	}
+
+	#dot3{
+	    height: 3vw;
+	    width: 3vw;
+	}
+
+}
+
+/* Larger Tablets (Like my Fusion Android) & Small Desktops */
+@media (min-width: 768px) and (max-width: 1096px) {
+
+	body{
+		font-size:  3vw;  /*from summary */
+		  /*  border: 5px solid orange;    :: Testing :: */ 
+	}
+
+	#iconstyle {
+		font-size: 4vw; /* vw is a % of the viewport  */
+		word-spacing: 8vw; 
+		text-shadow: 0.0px 0.0px #97CAEF; /* turns off dropshadow, I think */
+    }
+
+
+/*::::::::::::::::::: EIA :::::::::::::::::::*/
+    .eia-mainbox {                 
+        padding-top: 1.5em;
+    }
+    
+    .chosen-feeling-style{
+        font-size: 2em; 
+        padding-left: 0vw;    
+	}  
+
+    .rumination{	
+	    /*font-size: 1.3em;*/
+	    line-height: 1.45em;
+	    letter-spacing: 0.03em;
+    }
+    
+    #eia-sketch-holder{ /*   :::  holds the js canvas . */
+    	top: 2.5vh;
+    }
+
+    .eia-colorcodes{
+        top:  3vh;
+        left: 0vw;
+        text-shadow: 0.5px 0.5px 0.5px #656565;
+        font-size: 1.5em;
+	}
+
+
+}
+
+
+
+
+/* END  */
+
+
+
+

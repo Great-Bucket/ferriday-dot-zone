@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+/* Body */
+body {
+	font-family: source-sans-pro;
+	background-color: #CAFAFE;
+	margin: 10;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	font-family: 'Fjalla One', sans-serif; 
+	text-shadow: 1px 1px 1px #CAFAFE;  /* shadow for icons */
+	font-style: normal;
+	font-weight: 200;
+	max-width: 90%;
+	margin: auto; 
+}
+
+
+/* Makes the BUTTON-link */
+a:link, a:visited {
+	background-color: #FC4445; /* button background main color */
+  color: #f3f9fa;  /* button font color */
+  padding: 0.5vw 1.0vw;  /* Button size/width padding.  Changes button size */
+  text-align: center;
+  border-radius: 2.0vw;  /* curves the box edges */
+  display: inline-block;
+}
+
+
+a:hover, a:active {
+  background-color: #97CAEF; /* button hover color */
+}
+
+
+.imgbox {                  /* . imgbox = Image + Text + Icons   */
+	border-width: 0.65vw; 
+	border-style: solid;
+	border-color: #FC4445;  /* color thin boarder around main rectangle */
+	border-radius: 3.7vw;  /* curves the box edges */
+	background-color: #3FEEE6; /* color of inside box around picture */
+	margin: auto; 
+	max-width: 85vw;  
+	box-sizing: border-box;
+}
+
+
+.main-img {
+	padding: 0.5vw;
+	display: block;
+	margin-left: auto;  /* in combination    */
+	margin-right: auto; /* margin-left/right set to AUTO will center the image within .imgbox */
+	max-width: 82vw;  /* supposedly needs to be smaller than then .imgbox max-width . */ 
+	opacity: 0.95;
+	border-radius: 3.6vw;  /* curves the box edges */
+}
+
+.textbox{
+	text-align: center;
+	color: #f3f9fa;   /* headline font color  */
+	text-shadow: 1px 1px #97CAEF, 0px 0px 1px black; /* Drop Shadow for main text */
+	font-size: 4.25vw; /* Main Image Font Size */
+	padding: 1%;
+	letter-spacing: 3px;
+}
+
+.no-break {
+	white-space: nowrap;  /* to keep the text from line-breaking on small screens */
+}
+
+
+.container{ 		/* = Image + Text  */
+	position: relative;  /* step-1 to place the text on the image . */
+	}
+
+
+.textbox2{  /* step-2 to place the text on the image, as per https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_text_blocks  */
+  position: absolute;
+  padding-top: 3.25vh;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.button-style {
+  text-align: center;
+	margin: 5vh;
+	opacity: 0.8;
+	text-shadow: 0.5px 0.5px #97CAEF, 0 0 1px black; /* font drop shadow */
+	font-size: 2.5vw; /* fontsize for link-button */
+	text-decoration: none; /* removes underlines from links */
+}
+
+
+#iconstyle {
+	text-align: center;
+	font-size: 2.5vw; /* vw is a % of the viewport */
+	color: #55BCC9;  /* icon main color */
+	padding-top: 0.45vw;
+	padding-bottom: 0.25vw;
+	word-spacing: 7.5vw; /* vw is a % of the viewport */
+	background-color: #FC4445;  /* color of small rectangle surrounding icons (same color as outer border) */
+	border-style: solid;
+	border-color: #FC4445; /* color of border of this rectangle (same color as outer border) */
+	border-width: 0.6vw;
+	border-bottom-left-radius: 2.8vw;  /* curves the box edges */
+	border-bottom-right-radius: 2.8vw;  /* curves the box edges */
+	text-shadow: 1px 1px 1px #3FEEE6; /* shadow for icons */
+
+  /*  :::::::: Center the icons - works on Safari Whoo Hoo!!  :::::::: */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.copyright {
+	text-align: center;
+	padding: 20px;
+	margin: auto;
+	margin-top: 6.0vh;
+	max-width: 70vw; 
+	border-radius: 2.5vw;  /* curves the box edges */
+	background-color: #55BCC9; /* main background color */
+	font-size: 3.0vw; /* Font Size for copyright */
+	text-shadow: 0px 1px #CAFAFE;
+	text-transform: uppercase; 
+	font-weight: lighter;
+	letter-spacing: 2px;
+	border-top-width: 2px;
+	
+}
+
+/* Mobile (iPhone SE) */
+@media (max-width: 320px) {
+	body {
+		font-size:  6vw;
+	}
+	
+#iconstyle {
+	font-size: 4vw;
+	word-spacing: 6vw; 
+	text-shadow: 0.0px 0.0px #97CAEF;
+	}
+	
+	.button-style {
+		opacity: 0.90;
+		font-size: 5.5vw; /* fontsize for link-button */
+		margin: 4vh;
+	}
+	
+	.copyright {
+	font-weight: bold;
+	}
+}
+
+/* Small Tablets & iPhone 7*/
+@media (min-width: 321px) and (max-width: 767px) {
+	body {
+	font-weight: bold;
+	}	
+	
+	#iconstyle {
+	font-size: 6vw;
+	word-spacing: 8vw; 
+	text-shadow: 0.0px 0.0px #97CAEF;
+	}
+	
+	.button-style {
+		opacity: 0.90;
+		font-size: 5.5vw; /* fontsize for link-button */
+		margin: 4vh;
+	}
+	
+	.copyright {
+	font-weight: bold;
+	}
+}
+
+/* Larger Tablets (Like my Fusion Android) & Small Desktops */
+@media (min-width: 768px) and (max-width: 1096px) {
+
+	
+}

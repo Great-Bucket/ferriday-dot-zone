@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+
+
+
+* {
+	box-sizing: border-box;
+}
+
+
+
+html {
+    min-height: 100%;   /* needs to be 'min' to run the graident to the bottom */
+    background-color: #FC4445;  /* deep cyan */
+    background-image: linear-gradient(#3FEEE6, #55BCC9);
+}
+
+
+body {
+    color: #f3f9fa;  /* White  || Text colour */
+    margin-bottom: 5vh;
+    padding: 1%;
+    margin: auto;
+    max-width: 95%;
+    padding-top: 1.0vh;  /* was 1.5 */
+    padding-bottom: 1.5vh; /* was 0.5 */
+    font-family: 'Fjalla One', sans-serif; 
+    text-shadow: 1px 1px 1px #55BCC9, 0 0 1px #FC4445; /* Drop Shadow for main text */
+    line-height: 1.6em;
+    font-style: normal;
+    font-weight: 100; 
+    font-size: 2vw;
+}
+
+ 
+
+
+/* . ::::::::::::::  Links  :::::::::::::::::  */
+
+
+/* Makes the BUTTON-link */
+a:link, a:visited {
+     text-decoration-style: wavy;
+     color: #CAFAFE; /* link color */
+}
+
+a:hover, a:active {
+    cursor:pointer;
+}
+
+
+.my-button {
+  background-color: #97CAEF; /* button main color */
+  color: #f3f9fa;  /* button font color */
+  padding: .75vw 1vw;  /* Button size/width padding.  Changes button size */
+  text-align: center;
+  border-radius: 2.0vw;  /* curves the box edges */
+  display: inline-block;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+
+.my-button:hover {
+  background-color: #FC4445;
+}
+
+
+/* . ::::::::::::::  Surrounding Boxes and Text  :::::::::::::::::  */
+
+
+.container-a{
+/*position: relative;*/
+  max-width: 1200px;
+  margin: 0 auto;  /* centers the column */
+
+  /* border: 1px solid purple;     :: Testing :: */   
+   
+}
+
+.container-b {                 
+	border-width: 0.5vw; 
+	border-bottom-width: 2vh;  /* ::::::::  Bottom Border ::::::::  */
+	border-style: solid;
+	border-color: #CAFAFE;  /* light cyan */
+	border-radius: 3.7vw 3.7vw 0 0;  /* curves the box edges */
+	background-color: #97CAEF; /* Purple */	
+    margin-left: auto;  /* in combination to center */
+	margin-right: auto;
+    padding: 0px;
+}
+
+
+.container-c{
+    /* padding-top: 0.2em;   moves main content down */
+    margin-left: auto;  /* in combination to center */
+	margin-right: auto;
+
+    border-width: 1.5vw; 
+    border-bottom-width: 2vh;  /* ::::::::  Bottom Border ::::::::  */
+    border-style: solid;
+    border-color: #97CAEF;  /* purple */
+    border-radius: 3.7vw 3.7vw 0 0;  /* curves the box edges */
+
+    /*  border: 1px solid red;  :::: TESTING  ::::: */
+}
+
+.container-d{
+    background-color: #55BCC9; /* Light Cyan */ 
+    padding: 1.5em;
+      border-radius: 3.7vw 3.7vw 3.7vw 3.7vw;   curves the box edges 
+  /*  border: 1px solid red;  :::: TESTING  ::::: */
+
+}
+
+
+.pagetitle {                   /* :: Currently Not Used :: */
+    float: left;
+    padding-left: 0.2em;
+    color: #328cc1; /*light blue font */
+    letter-spacing: 0.2em;
+    font-size: 175%; /* subtitle Font Size calc(12px + 2.5vw); */
+    white-space: nowrap;  /* keep text from breaking on small screens */
+    
+/*        border: 1px solid yellow;     */
+}
+
+.details-title{
+    font-size: 155%;
+    font-weight: 600;
+}
+
+
+/*   ::::::::::::::  Button Positioning  :::::::::::::::::  */
+.container-button{
+    padding-top: 1em;
+}
+
+.vertical-center {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*  ::::::::::::::  Iconz  :::::::::::::::::  */
+#iconstyle {
+    font-size: 2.5vw; /* vw is a % of the viewport */
+    color: #FC4445;
+    padding-top: 0.45vw;
+    padding-bottom: 0.25vw;
+    word-spacing: 7.5vw; /* vw is a % of the viewport */
+    background-color: #CAFAFE; /* color of small rectangle surrounding icons (same color as outer border) */
+    border-style: solid;
+    border-color: #CAFAFE; /* color of border of this icon rectangle (same color as outer border) */
+    border-width: 0.6vw;
+    border-bottom-left-radius: 2.6vw;  /* curves the box edges */
+    border-bottom-right-radius: 2.8vw;  /* curves the box edges */
+    text-shadow: 1px 1px 1px #3FEEE6; /* shadow for icons */
+
+    /*  :::::::: Center the icons - works on Safari Whoo Hoo!!  :::::::: */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/*  ::::::::::::::  Imagez  :::::::::::::::::  */
+
+.responsive-image {
+    width: 25%;
+    height: auto;
+   /* border: 10px solid yellow; */
+}
+
+/*  END  */

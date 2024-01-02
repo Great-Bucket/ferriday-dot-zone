@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+/* Body */
+body {
+	font-family: source-sans-pro;
+	background-color: #97CAEF;
+	margin: 10;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	font-family: 'Fjalla One', sans-serif; 
+	font-style: normal;
+	font-weight: 200;
+  color: #f3f9fa; /* font color */
+  /*  text-shadow: 2px 1px 1px #97CAEF;  shadow for icons */
+	max-width: 90%;
+	margin: auto; 
+
+}
+
+/*     border: 5px solid green; /* testing */
+
+
+/* ::::::::::::: Center Button :::::: */
+
+/* Makes the BUTTON-link */
+a:link, a:visited {
+  background-color: #FC4445; /* Red */
+  color: white;
+  padding: 0.5vw 1.0vw;  /* Button size/width padding.  Changes button size */
+  text-align: center;
+  border-radius: 2.0vw;  /* curves the box edges */
+  display: inline-block;
+}
+
+.button-style {
+  text-align: center;
+	margin: 5vh;
+	opacity: 0.85; /* was 0.8 */
+	text-shadow: 0.5px 0.5px #3FEEE6, 1px 1px 1px black;
+	font-size: 2.5vw; /* fontsize for link-button */
+	text-decoration: none; /* removes underlines from links */
+	white-space: nowrap;  /* to keep the button from line-breaking on small screens */
+}
+
+
+a:hover, a:active {
+  background-color: #97CAEf;
+}
+
+
+.imgbox {                  /* . imgbox = Image + Text + Icons   */
+	border-width: 0.65vw; 
+	border-style: solid;
+	border-color: #3FEEE6;
+	border-radius: 3.7vw;  /* curves the box edges */
+	background-color: #CAFAFE;
+	margin: auto; 
+	max-width: 85vw;  
+	box-sizing: border-box;
+}
+
+#sketch-holder{ /*   :::  holds the js canvas . */
+	display: block;
+	text-align: center;
+    
+    /*	opacity: 0.5;  this does work on the canvas, but I don't need it now  */
+
+}
+
+canvas {  border-radius: 3.6vw;  }
+
+
+/* ::::::::::::::: */
+
+.main-img {
+	padding: 0.5vw;
+	display: block;
+	margin-left: auto;  /* in combination    */
+	margin-right: auto; /* margin-left/right set to AUTO will center the image within .imgbox */
+	max-width: 82vw;  /* supposedly eeds to be smaller than then .imgbox max-width . */ 
+	opacity: 0.7;
+	border-radius: 3.6vw;  /* curves the box edges */
+}
+
+.textbox{
+	text-align: center;
+	font-size: 4.25vw; /* Image Headline Font Size */
+	padding: 1%;
+	letter-spacing: 3px;
+  text-shadow: -1px 1px 1px #55BCC9, 1px 1px 3px black; /* Drop Shadow for Image Headline */
+}
+
+.no-break {
+	white-space: nowrap;  /* to keep the text from line-breaking on small screens */
+}
+
+
+.container{ 		/* = Image + Text  */
+	position: relative;  /* step-1 to place the text on the image . */
+	}
+
+
+.textbox2{  /* step-2 to place the text on the image, as per https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_text_blocks  */
+  position: absolute;
+  padding-top: 3.25vh;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+/* ::::::::::::: Icons :::::: */
+#iconstyle {
+	text-align: center;
+	font-size: 2.5vw; /* vw is a % of the viewport */
+	color: #FC4445; /* icon color */
+	padding-top: 0.45vw;
+	padding-bottom: 0.25vw;
+	word-spacing: 7.5vw; /* vw is a % of the viewport */
+	background-color: #3FEEE6;  /* box around icons color */
+	border-style: solid;
+	border-color: #3FEEE6; /* border of box around icons (inside larger frame) */
+	border-width: 0.6vw;
+	border-bottom-left-radius: 2.8vw;  /* curves the box edges */
+	border-bottom-right-radius: 2.8vw;  /* curves the box edges */
+	text-shadow: 2px 1px 1px #CAFAFE; /* shadow for icons */
+
+  /*  :::::::: Center the icons - works on Safari Whoo Hoo!!  :::::::: */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.copyright {
+	text-align: center;
+	padding: 20px;
+	margin: auto;
+	margin-top: 6.0vh;
+	max-width: 70vw; 
+	border-radius: 2.5vw;  /* curves the box edges */
+	background-color: #CAFAFE;
+	color: #1e0d05; /* dark color */
+	font-size: 3.0vw; /* Font Size for copyright */
+	text-shadow: 1px 2px 1px #97CAEf, 0 0 1px black; 
+	text-transform: uppercase; 
+	font-weight: lighter;
+	letter-spacing: 2px;
+	border-top-width: 2px;
+	
+}
+
+/*  END  */

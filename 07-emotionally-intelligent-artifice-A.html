@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    
+	<!-- *Emotionally Intelligent Artifice* Designed by Reed O'Beirne with assistance from Oliver Mattos and Nils Funk. Originally inspired by the London Algorithmic Art 'Artificial Emotional Intelligence' Hackathon.  Feelings list adapted from the Center for Nonviolent Communication, https://www.cnvc.org/ -->
+
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+<title>Emotionally Intelligent Artifice</title>
+    
+<meta name="description" content="Explore how you feel about how the computer feels about you.">
+  
+<!-- CSS  -->
+<link href="./assets/css/07_eia_style-1.css" rel="stylesheet" type="text/css">
+<link href="./assets/css/responsive.css" rel="stylesheet" type="text/css">
+	  
+<!-- Java Scripts  -->
+<script src="./assets/js/eia-sketch-A.js"></script>
+<script src="./assets/js/p5.min.js"></script>
+	  
+<!-- Font Detailz -->
+<link href="./assets/fontz/computer7.ttf" rel="stylesheet"> 
+<link href="./assets/fontz/SpaceMono-Regular.ttf" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+
+<!-- Favicon -->   
+<link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="./assets/favicon/site.webmanifest">
+
+	   
+	  
+</head>
+<body>
+	  
+    <div class="eia-mainbox"> <!-- centers the content on the page via CSS -->
+
+        <img class="main-img" src="./assets/imagez/AEI_image_sculpture_1000x500.jpg" alt="viewpoint">
+          
+        <div class="eia-intro-text">  
+            <p>It is time for your intelligently artificial emotional evaluation!</p>
+            <p>To complete our analysis, we need a little more help from you. After you've properly composed yourself, please select which best describes how you feel at the moment?</p>
+        </div> <!--   close eia-intro-text -->
+        
+        
+        
+        <div class="eia-choices-block">
+
+            1.&nbsp;<a href="#3" class="chosen1" onclick="myChoosing(1)"><span id="feeling-choice1"></span> </a>
+            <p></p>  
+            2.&nbsp;<a href="#4" class="chosen2" onclick="myChoosing(2)"><span id="feeling-choice2"></span> </a>
+           <p></p>  
+            
+        </div> <!-- close "eia-choices-block" -->
+
+    </div> <!-- close "eia-mainbox" -->
+	  
+  </body>
+</html>

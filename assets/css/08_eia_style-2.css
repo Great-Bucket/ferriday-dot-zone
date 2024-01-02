@@ -1,0 +1,188 @@
+@charset "UTF-8";
+/* Style for *Emotionally Intelligent Artifice* Designed by Reed O'Beirne */
+
+{ box-sizing: border-box; }
+
+/* Body */
+body {
+
+
+    background-color: black;
+    margin: 3px;
+    margin: auto; 
+    padding-top: 10px;
+    padding-bottom: 20px;
+    max-width: 90%;
+    color: #b3b8bc;
+    text-shadow: 0.5px 0.5px 0.5px #656565;
+	font-style: normal;
+	font-weight: 100;
+    font-size: 2vw;
+    
+/*    border: 2px solid orange;*/
+}
+
+
+/* ::::::::::::::: */
+    a:link { color: white; 
+    text-decoration: underline; 
+    text-decoration-style:dashed; } 
+
+    a:visited { color: white; 
+    text-decoration: none; }  
+
+    a:hover {color: #3feee6;  
+    text-decoration: underline;}  /* Cyan */
+
+    a:active {color: #55bcc9;  }  /* Blue Grey */
+
+
+/* ::::::::::::::: */
+
+@font-face {
+    font-family: 'computer_7regular';
+    src: url('../fontz/computer_7-webfont.woff2') format('woff2'),
+         url('../fontz/computer_7-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'space_monoregular';
+    src: url('../fontz/spacemono-regular-webfont.woff2') format('woff2'),
+         url('../fontz/spacemono-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* ::::::::::::::: */
+
+.eia-mainbox {                  /* .eia-mainbox to center content  */
+    margin: auto; 
+	max-width: 1000px;
+    padding-top: 0.5em;
+    /* border: 2px solid pink; */
+}
+
+
+
+/* ::::::::::::::: */
+
+.chosen-feeling-style{
+    font-family: 'computer_7regular', Veranda, monospace;
+    text-shadow: 0.5px 0.5px 0.5px #d2d2d2;
+    color: white;
+    font-size: 2em; 
+    padding-left: 2vw;
+    /*border: 1px solid cyan;*/
+    
+}
+
+.rumination{	
+    font-family: 'Fjalla One', sans-serif; 
+    /*font-size: 1.3em;*/
+    line-height: 1.65em;
+    letter-spacing: 0.06em;
+    padding-left: 2vw;
+}
+
+
+#eia-sketch-holder{ /*   :::  holds the js canvas . */
+    position: relative;
+    text-align: center;
+    top: -1.0em;
+    /*border: 3px solid green;*/
+}
+
+canvas {
+  border-radius: 0px;
+/*    border: 1px solid red;*/
+}
+
+
+/* ::::::::::::::: */
+
+.eia-colorcodes{
+    position: relative;
+    top:  -11vh;
+    left: 1vw;
+    padding-left: 3vh;
+    font-family: 'computer_7regular', Veranda, monospace;
+    color: white;
+    text-shadow: 0.5px 0.5px 0.5px #b3b8bc;
+    font-size: 1.3em;
+/*    border: 1px solid red;*/
+}
+
+
+li {
+/*  background: red;*/
+  margin-bottom: 1vh;
+}
+
+li:last-child {
+ margin-bottom: 0px;
+}
+
+ul {
+/*  background: silver;*/
+  padding: 1px;  
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+#dot1{
+    position: relative;
+    display: inline-block; 
+    height: 1.8vw;
+    width: 1.8vw;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: black;
+    align-items: center;
+    top: 0.8vw; 
+
+}
+
+#dot2{
+  position: relative;
+  display: inline-block; 
+  height: 1.8vw;
+  width: 1.8vw;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: black;
+  align-items: center;
+  top: 0.8vw;
+
+}
+
+#dot3{
+  position: relative;
+  display: inline-block; 
+  height: 1.8vw;
+  width: 1.8vw;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: black;
+  align-items: center;
+  top: 0.8vw;
+ 
+}
+
+.eia-footer-text{
+	font-family: 'Fjalla One', sans-serif; 
+    color: #b3b8bc;
+    text-shadow: 0.5px 0.5px 0.5px #656565;
+    line-height: 1.65em;
+    letter-spacing: 0.03em;
+    padding-left: 3vh;
+    
+}
+
+/*  END  */
+
+
+
+

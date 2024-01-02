@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* Body */
+body {
+	font-family: source-sans-pro;
+	background-color: #55BCC9;
+	margin: 10;
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+	font-family: 'Fjalla One', sans-serif; 
+	text-shadow: 1px 1px 1px #55BCC9;
+	font-style: normal;
+	font-weight: 200;
+	max-width: 90%;
+	margin: auto; 
+}
+
+
+
+
+#sketch-holder{ /*   :::  holds the js canvas . */
+	display: block;
+	text-align: center;
+	position: absolute;					/* required   */
+	left: 50%;							/* required   */
+	top: 50%;							/* required   */
+	transform: translate(-50%, -50%);	/* required   */
+	
+}
+
+.main-img {
+	padding: 0.5vw;
+	display: block;
+	margin-left: auto;  /* in combination    */
+	margin-right: auto; /* margin-left/right set to AUTO will center the image within .imgbox */
+	max-width: 82vw;  /* supposedly eeds to be smaller than then .imgbox max-width . */ 
+}
+
+

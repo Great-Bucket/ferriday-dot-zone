@@ -1,0 +1,369 @@
+@charset "UTF-8";
+/* Style for *Emotionally Intelligent Artifice* Designed by Reed O'Beirne */
+
+{ box-sizing: border-box; }
+
+/* Body */
+body {
+
+
+    background-color: black;
+    margin: 3px;
+    margin: auto; 
+    padding-top: 10px;
+    padding-bottom: 20px;
+    max-width: 90%;
+    
+    color: #b3b8bc;
+/*	text-shadow: 2px 2px 1px #d2d2d2;*/
+    text-shadow: 0.5px 0.5px 0.5px #656565;
+	font-style: normal;
+	font-weight: 100;
+    
+/*    border: 2px solid orange;*/
+}
+
+
+/* ::::::::::::::: */
+    a:link { color: white; 
+    text-decoration: underline; 
+    text-decoration-style:dashed; } 
+
+    a:visited { color: white; 
+    text-decoration: none; }  
+
+    a:hover {color: #3feee6;  
+    text-decoration: underline;}  /* Cyan */
+
+    a:active {color: #55bcc9;  }  /* Darker Blue */
+
+
+/* ::::::::::::::: */
+
+@font-face {
+    font-family: 'computer_7regular';
+    src: url('../fontz/computer_7-webfont.woff2') format('woff2'),
+         url('../fontz/computer_7-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'space_monoregular';
+    src: url('../fontz/spacemono-regular-webfont.woff2') format('woff2'),
+         url('../fontz/spacemono-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* ::::::::::::::: */
+
+.mainbox {                  /* .mainbox to center content  */
+/*	background-color: #3FEEE6;   med light blue */
+/*  background-color: 'blue';*/
+    
+    margin: auto; 
+	max-width: 1000px;
+    padding-top: 0.5em;
+    
+/*    border: 4px solid #3feee6; */
+   
+    
+/*    padding: 0.5em;*/
+/*    padding-left: 1em;*/
+/*    border-radius: 3.6vw;   curves the box edges */
+    
+
+  /* border: 2px solid pink; */
+}
+
+
+
+/* ::::::::::::::: */
+
+.chosen-feeling-style{
+   font-family: 'computer_7regular', Veranda, monospace;
+   text-shadow: 0.5px 0.5px 0.5px #d2d2d2;
+    color: white;
+    font-size: 2em; 
+    padding-left: 2vw;
+    
+/*border: 1px solid cyan;*/
+    
+}
+
+.rumination{	
+ /*   font-family: 'space_monoregular', Arial, sans-serif; */
+    font-family: 'Fjalla One', sans-serif; 
+    font-size: 1.3em;
+    line-height: 1.65em;
+    letter-spacing: 0.06em;
+    padding-left: 2vw;
+    
+}
+
+
+#sketch-holder{ /*   :::  holds the js canvas . */
+    position: relative;
+    text-align: center;
+    top: -1.0em;
+    
+/*	display: block;*/
+/*    margin: auto; */
+/*	max-width: 1000px;*/
+/*    z-index: -1;*/
+	
+/*border: 3px solid green;*/
+}
+
+canvas {
+  border-radius: 0px;
+    
+    
+/*    border: 1px solid red;*/
+}
+
+
+/* ::::::::::::::: */
+
+.colorcodes{
+    position: relative;
+    top:  -11vh;
+    left: 1vw;
+/*    padding: 3vh;*/
+    padding-left: 3vh;
+
+    font-family: 'computer_7regular', Veranda, monospace;
+    color: white;
+    text-shadow: 0.5px 0.5px 0.5px #b3b8bc;
+    font-size: 1.3em;
+    
+/*    border: 1px solid red;*/
+}
+
+
+li {
+/*  background: red;*/
+  margin-bottom: 1vh;
+}
+
+li:last-child {
+ margin-bottom: 0px;
+}
+
+ul {
+/*  background: silver;*/
+  padding: 1px;  
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+#dot1{
+    position: relative;
+    display: inline-block; 
+    height: 1.8vw;
+    width: 1.8vw;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: black;
+    align-items: center;
+    top: 0.8vw; 
+
+}
+
+#dot2{
+  position: relative;
+  display: inline-block; 
+  height: 1.8vw;
+  width: 1.8vw;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: black;
+  align-items: center;
+  top: 0.8vw;
+
+}
+
+#dot3{
+  position: relative;
+  display: inline-block; 
+  height: 1.8vw;
+  width: 1.8vw;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: black;
+  align-items: center;
+  top: 0.8vw;
+ 
+}
+
+.footer-text{
+  
+ /*   font-family: 'space_monoregular', Arial, sans-serif; */
+	font-family: 'Fjalla One', sans-serif; 
+
+    color: #b3b8bc;
+    text-shadow: 0.5px 0.5px 0.5px #656565;
+    font-size: 1.0em;
+    line-height: 1.65em;
+    letter-spacing: 0.06em;
+
+    
+}
+
+
+/* ::::::::::::::::::::::::::::::::::: */
+/* :::::::: RESPONSIVE ::::::::::::::: */
+/* ::::::::::::::::::::::::::::::::::: */
+
+
+
+/* Mobile (iPhone SE) */
+@media (max-width: 320px) {
+
+
+
+    .rumination{	
+    font-size: 0.9em;
+    line-height: 1.15em;
+    letter-spacing: 0.025em;
+		/* border: 1px solid pink;  */
+    }
+	
+	#sketch-holder{ /*   :::  holds the js canvas . */
+	  top: 0em;
+		/* border: 3px solid green;  */
+	}
+    
+    .colorcodes{
+    top:  -3vh;
+    left: 1vw;
+    padding-left: 3vh;
+    text-shadow: 0.5px 0.5px 1px white;
+    font-size: 1.3em;
+}
+
+    .footer-text{
+    text-shadow: 0.5px 0.5px 0.5px #656565;
+    font-size: 0.85em;
+    line-height: 1.45em;
+    letter-spacing: 0.05em;
+}
+    
+.chosen-feeling-style{
+   font-family: 'computer_7regular', Veranda, monospace;
+    color: white;
+    font-size: 2em; 
+    padding-left: 2vw;    
+}
+    
+}
+
+
+/* ::::::: Small Tablets & iPhone 7 :::::::::::: */
+
+@media (min-width: 321px) and (max-width: 767px) {
+    
+    .rumination{	
+    font-size: 1.0em;
+    line-height: 1.15em;
+    letter-spacing: 0.03em;
+	/*	border: 3px solid red; */
+    }
+    
+    #sketch-holder{ /*   :::  holds the js canvas . */
+    top: 0vh;
+}
+    
+    .colorcodes{
+    top:  -3vh;
+    left: 0vw;
+    padding-left: 3vh;
+    text-shadow: 1px 1px 0.5px white;
+    font-size: 1.1em;
+}
+
+    .footer-text{
+    text-shadow: 0.5px 0.5px 0.5px #656565;
+    font-size: 1.0em;
+    line-height: 1.15em;
+    letter-spacing: 0.03em;
+}
+    
+.chosen-feeling-style{
+   font-family: 'computer_7regular', Veranda, monospace;
+    color: white;
+    font-size: 2em; 
+    padding-left: 2vw;
+}
+    
+    
+#dot1{
+    height: 3vw;
+    width: 3vw;
+}
+
+#dot2{
+    height: 3vw;
+    width: 3vw;
+}
+
+#dot3{
+    height: 3vw;
+    width: 3vw;
+}
+    
+    
+    
+    
+}
+
+
+/* ::::::: larger tablets :::::::::::: */
+@media (min-width: 768px) and (max-width: 1096px) {
+    
+    
+    .mainbox {                 
+    padding-top: 1.5em;
+    }
+    
+    .chosen-feeling-style{
+    font-size: 2em; 
+    margin-left: 2vw;
+
+}
+    
+    .rumination{	
+    font-size: 1.3em;
+    line-height: 1.45em;
+    letter-spacing: 0.03em;
+    }
+    
+    #sketch-holder{ /*   :::  holds the js canvas . */
+    top: 2.5vh;
+}
+   
+    .colorcodes{
+    top:  3vh;
+    left: 0vw;
+    padding-left: 3vh;
+    text-shadow: 0.5px 0.5px 0.5px #b3b8bc;
+    font-size: 1.5em;
+}
+
+    .footer-text{
+    text-shadow: 0.5px 0.5px 0.5px #656565;
+    font-size: 1.0em;
+    line-height: 1.65em;
+    letter-spacing: 0.06em;
+}
+    
+    .chosen-feeling-style{
+        font-size: 2em; 
+        padding-left: 0vw;    
+}  
+    
+	
+}
+
